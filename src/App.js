@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import BasicInfo from './components/BasicInfo'
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  // Easy Challenge
+  constructor(props){
+    super(props);
+    this.state = {
+      person: {}
+    }
+  }
+  // Very Easy Challenge
+  render() {
+    return (
+      <div className="App">
+        <h1 className="underline">React Gi Assignment</h1>
+        {/* <h1>Alannah Gregory</h1>
+        <h3>980-280-7101</h3>
+        <p>Current Age: 7/1/1819</p> */}
+        {/* ---------------------------------- */}
+        {/* Medium Challenge */}
+        <BasicInfo className="row"></BasicInfo>
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
